@@ -7,10 +7,10 @@ image_resource:
 
 inputs:
 - name: houdini
-  path: gopath/src/github.com/vito/houdini
+  path: gopath/src/github.com/stuart-stanley/houdini
 
 outputs:
 - name: release
 
 run:
-  path: gopath/src/github.com/vito/houdini/ci/build-artifacts
+  path: gopath/src/github.com/stuart-stanley/houdini/ci/build-artifacts

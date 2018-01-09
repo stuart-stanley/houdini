@@ -9,7 +9,7 @@ export DISTDIR=$PWD/release
 
 date +"%Y-%m-%d" > $DISTDIR/release-name
 
-cd $GOPATH/src/github.com/vito/houdini
+cd $GOPATH/src/github.com/stuart-stanley/houdini
 
 mkdir -p $DISTDIR/artifacts
 

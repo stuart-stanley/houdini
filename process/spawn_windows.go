@@ -13,7 +13,7 @@ import (
 	"unsafe"
 
 	"code.cloudfoundry.org/garden"
-	"github.com/vito/houdini/win32"
+	"github.com/stuart-stanley/houdini/win32"
 )
 
 var kernel32 = syscall.NewLazyDLL("kernel32.dll")

@@ -6,7 +6,7 @@ import (
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	"github.com/vito/houdini"
+	"github.com/stuart-stanley/houdini"
 
 	"testing"
 )

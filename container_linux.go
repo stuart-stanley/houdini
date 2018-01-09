@@ -30,3 +30,17 @@ func (container *container) setup() error {
 
 	return nil
 }
+
+func (container *container) unsetup() error {
+	for i := len(container.spec.BindMounts)-1; i >= 0; i-- {
+		bm := container.spec.BindMounts[i]
+		dest := filepath.Join(container.workDir, bm.DstPath)
+		println("going to unmount", dest)
+		err := syscall.Unmount(dest, syscall.MNT_FORCE)
+		if err != nil {
+			print("WARNING: unmount of ", dest, " got ", err)
+		}
+	}
+
+	return nil
+}

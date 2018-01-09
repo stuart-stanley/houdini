@@ -5,8 +5,8 @@ set -e -u -x
 cd $(dirname $0)/..
 
 mkdir -p .goempty/src/github.com/vito
-rm -rf .goempty/src/github.com/vito/houdini
-ln -s $PWD .goempty/src/github.com/vito/houdini
+rm -rf .goempty/src/github.com/stuart-stanley/houdini
+ln -s $PWD .goempty/src/github.com/stuart-stanley/houdini
 
 truckers=$(gosub list -a ./cmd/houdini | grep -v houdini)
 for trucker in $truckers; do

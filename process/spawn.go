@@ -9,7 +9,7 @@ import (
 	"syscall"
 
 	"code.cloudfoundry.org/garden"
-	"github.com/vito/houdini/ptyutil"
+	"github.com/stuart-stanley/houdini/ptyutil"
 	"github.com/pkg/term/termios"
 )
 

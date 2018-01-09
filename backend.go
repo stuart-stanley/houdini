@@ -98,7 +98,12 @@ func (backend *Backend) Destroy(handle string) error {
 		return err
 	}
 
-	err = fs.RemoveAll(container.workDir)
+        err = container.unsetup()
+        if err != nil {
+               return nil
+        }
+
+        err = fs.RemoveAll(container.workDir)
 	if err != nil {
 		return err
 	}

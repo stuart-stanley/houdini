@@ -13,7 +13,7 @@ import (
 	"code.cloudfoundry.org/garden"
 	"github.com/charlievieth/fs"
 	"github.com/concourse/go-archive/tarfs"
-	"github.com/vito/houdini/process"
+	"github.com/stuart-stanley/houdini/process"
 )
 
 type UndefinedPropertyError struct {
